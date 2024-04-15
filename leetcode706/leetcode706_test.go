@@ -5,22 +5,6 @@ import (
 )
 
 func TestMyHashMap(t *testing.T) {
-	type args struct {
-		key int
-	}
-	tests := []struct {
-		name string
-		args args
-	}{
-		// TODO: Add test cases.
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			this := &MyHashMap{}
-			this.Remove(tt.args.key)
-		})
-	}
-
 	myHashMap := Constructor()
 	myHashMap.Put(1, 1)
 	myHashMap.Put(2, 2)
